@@ -1,16 +1,33 @@
-# React + Vite
+# OJT Placement System — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+React frontend for the OJT Placement and Monitoring System, consuming the NestJS backend API.
 
-Currently, two official plugins are available:
+## Tech Stack
+- React + Vite
+- Tailwind CSS v4
+- React Router
+- Axios
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- Login with JWT authentication
+- Dashboard showing placements (role-aware: student sees own placements, coordinator sees all)
+- Create new placement applications
+- Placement detail view with logbook entries
+- Coordinator approve/reject workflow
 
-## React Compiler
+## Running Locally
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Clone the repository
+2. Install dependencies:
+   \`\`\`
+   npm install
+   \`\`\`
+3. Make sure the backend (ojt-placement-api) is running at `http://localhost:3000`
+4. Run the dev server:
+   \`\`\`
+   npm run dev
+   \`\`\`
+5. Open `http://localhost:5173`
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Backend Repository
+https://github.com/leeebisreal616/ojt-placement-api
